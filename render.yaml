@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: catnocathy
+    runtime: node
+    startCommand: npm start
+    buildCommand: npm ci
+    envVars:
+      - key: NODE_ENV
+        value: production
