@@ -1,7 +1,7 @@
 {
   "name": "catnocathy-web-terminal",
-  "version": "0.1.0",
-  "description": "Simple web-hosted terminal using xterm.js and node-pty",
+  "version": "0.2.0",
+  "description": "Simple web-hosted terminal using xterm.js and node-pty - Netlify adapted",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
