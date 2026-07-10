@@ -21,7 +21,24 @@ Render handles everything automatically:
 4. Click "Deploy"
 5. Wait ~2 minutes for your terminal to be live
 
-### Option 2: Deploy to Railway (Free Credits)
+### Option 2: Deploy to Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/MOG4125/CatnoCathy)
+
+Netlify makes deployment easy with serverless functions:
+- Generous free tier
+- Automatic builds on push
+- HTTPS included
+- CDN globally distributed
+
+**Steps:**
+1. Click the button above
+2. Connect your GitHub account
+3. Choose a site name
+4. Click "Deploy Site"
+5. Wait for build to complete (~2-3 minutes)
+
+### Option 3: Deploy to Railway (Free Credits)
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/Cq2Bjt)
 
@@ -31,7 +48,7 @@ Railway gives new users $5 free credits monthly:
 - Pay-as-you-go after free tier
 - Automatic HTTPS
 
-### Option 3: Deploy to Heroku (Classic)
+### Option 4: Deploy to Heroku (Classic)
 
 Deploy directly to Heroku using the Heroku CLI:
 
@@ -45,7 +62,7 @@ Or click to deploy:
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MOG4125/CatnoCathy)
 
-### Option 4: Self-Hosted (Docker)
+### Option 5: Self-Hosted (Docker)
 
 For full control, run locally or on your own server:
 
@@ -82,6 +99,7 @@ docker run --rm -p 3000:3000 catnocathy
 ├── package.json           # Node dependencies
 ├── Dockerfile             # Docker configuration
 ├── render.yaml            # Render deployment config
+├── netlify.toml           # Netlify deployment config
 ├── heroku.yml             # Heroku deployment config
 ├── railway.json           # Railway deployment config
 └── public/
@@ -121,6 +139,7 @@ Visit http://localhost:3000
 | Platform | Cost | Ease | Auto-Deploy | Notes |
 |----------|------|------|-------------|-------|
 | **Render** | Free tier | ⭐⭐⭐ | ✅ | Recommended - simplest |
+| **Netlify** | Free tier | ⭐⭐⭐ | ✅ | Generous free tier, great for static + serverless |
 | **Railway** | $5/month free | ⭐⭐ | ✅ | Good value |
 | **Heroku** | Paid only | ⭐⭐ | ✅ | Classic platform |
 | **Local/Docker** | Free | ⭐⭐ | N/A | Full control |
