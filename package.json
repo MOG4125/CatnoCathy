@@ -4,7 +4,8 @@
   "description": "Simple web-hosted terminal using xterm.js and node-pty - Netlify adapted",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'Build complete' && npm install"
   },
   "author": "MOG4125",
   "license": "MIT",
@@ -12,5 +13,8 @@
     "express": "^4.18.2",
     "ws": "^8.13.0",
     "node-pty": "^1.0.1"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
