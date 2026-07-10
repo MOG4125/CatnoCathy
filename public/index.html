@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CatnoCathy — Web Terminal</title>
+  <link rel="stylesheet" href="https://unpkg.com/xterm/css/xterm.css" />
+  <style>
+    body, html { height: 100%; margin: 0; display: flex; flex-direction: column; }
+    #terminal { flex: 1 1 auto; }
+    header { padding: 8px; background: #222; color: white; font-family: sans-serif; }
+  </style>
+</head>
+<body>
+  <header>CatnoCathy Web Terminal — <small>use responsibly (not for public / unauthenticated use)</small></header>
+  <div id="terminal"></div>
+
+  <script src="https://unpkg.com/xterm/lib/xterm.js"></script>
+  <script src="https://unpkg.com/xterm-addon-fit/lib/xterm-addon-fit.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
