@@ -1,0 +1,22 @@
+{
+  "name": "CatnoCathy Web Terminal",
+  "description": "A lightweight web-based terminal interface accessible from any browser",
+  "repository": "https://github.com/MOG4125/CatnoCathy",
+  "keywords": ["terminal", "shell", "web", "xterm"],
+  "success_url": "/",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment (production or development)",
+      "value": "production"
+    },
+    "PORT": {
+      "description": "Port to run the server on",
+      "value": "3000"
+    }
+  }
+}
